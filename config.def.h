@@ -44,6 +44,10 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,     XK_j,      movetab,     { .i = -1 } },
 	{ MODKEY|ShiftMask,     XK_k,      movetab,     { .i = +1 } },
 	{ MODKEY,               XK_Tab,    rotate,      { .i = 0 } },
+	/* my shortcuts */
+	{ MODKEY|ShiftMask,     XK_t, spawn,       { 0 } },
+	{ MODKEY|ShiftMask,     XK_w, killclient,       { 0 } },
+	/* end my shortcuts */
 
 	{ MODKEY,               XK_grave,  spawn,       SETPROP("_TABBED_SELECT_TAB") },
 	{ MODKEY,               XK_1,      move,        { .i = 0 } },
